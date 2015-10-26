@@ -10,7 +10,7 @@ def resettable():
     confirmation = input("Are you sure you want to reset the database? (Y/n)")
     if confirmation == "y":
         for i in range(500):
-            cur.execute("UPDATE Kentekens SET Kenteken='0' WHERE ID=%d" % i)
+            cur.execute("UPDATE Kentekens SET Kenteken='00-00-00' WHERE ID=%d" % i)
 
 
 #cur.execute("UPDATE Kentekens SET Kenteken='12-AV-FA' WHERE ID=0")

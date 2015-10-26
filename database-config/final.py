@@ -14,4 +14,11 @@ def resettable():
         for i in range(500):
             cur.execute("UPDATE Kentekens SET Kenteken='00-00-00' WHERE ID=%d" % i)
 
+choice = input("Do you want to create a table or reset an existant table?\nCreate/Reset: ")
+if choice == "reset":
+    resettable()
+elif choice == "create":
+    createtable()
+else:
+    pass
 conn.commit()
