@@ -1,4 +1,0 @@
-def newdb():
-        with conn:
-            cur.execute("CREATE TABLE Auto(Id INT, Kenteken STR)")
-            cur.execute("INSERT INTO Auto VALUES(0, 00-00-00)")
