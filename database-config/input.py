@@ -23,3 +23,4 @@ while True:
         break
     else:
         print("Het kenteken komt reeds voor in de database.")
+conn.commit()

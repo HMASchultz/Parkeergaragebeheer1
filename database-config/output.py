@@ -19,3 +19,4 @@ while True:
         except:
             pass
         print("Tot ziens!")
+conn.commit()

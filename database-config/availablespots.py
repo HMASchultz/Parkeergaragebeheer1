@@ -13,3 +13,4 @@ while True:
         else:
             pass
     print(freespots)
+conn.commit()
