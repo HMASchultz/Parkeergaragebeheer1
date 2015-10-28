@@ -1,6 +1,5 @@
 __author__ = 'Jan'
 import pymysql as SQL
-
 conn = SQL.connect(host = 'jancoz.com', port=3306, user='garage_garage', passwd='123456', db='garage_garage')
 cur = conn.cursor()
 kentekenver = 0
@@ -19,8 +18,6 @@ while True:
         #gegeven kenteken in de database flikkeren
         cur.execute("UPDATE Kentekens SET Kenteken='{0}' WHERE ID={1}".format(kenteken, check))
         kentekenver = kenteken
-    elif kenteken == "exit":
-        break
     else:
         print("Het kenteken komt reeds voor in de database.")
 conn.commit()
