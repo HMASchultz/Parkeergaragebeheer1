@@ -4,7 +4,7 @@ conn = SQL.connect(host = 'jancoz.com', port=3306, user='garage_garage', passwd=
 cur = conn.cursor()
 #Creation of the table
 def createtable():
-    cur.execute("CREATE TABLE Kentekens(ID INT, Kenteken VARCHAR(8), Tijd INT)")
+    cur.execute("CREATE TABLE Kentekens(ID INT, Kenteken VARCHAR(50), Tijd INT)")
     for i in range(500):
         cur.execute("INSERT INTO Kentekens VALUES (%d, '00-00-00', 0)" % i)
 #Resets all values to default
